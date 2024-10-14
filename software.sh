@@ -34,7 +34,6 @@ software=(
     "geany"                  # Lightweight IDE for various programming languages
     "spyder"                 # Scientific Python IDE
     "ufw"                    # Uncomplicated Firewall
-    "balena-etcher"          # ISO image writer (Etcher)
     
     # AwesomeWM Utilities
     "rofi"                   # Application launcher
