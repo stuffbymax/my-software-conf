@@ -36,7 +36,6 @@ software=(
     "ufw"                    # Uncomplicated Firewall
     
     # AwesomeWM Utilities
-    "rofi"                   # Application launcher
     "feh"                    # Image viewer for backgrounds
     "picom"                  # Compositor for transparency and effects
     "lxappearance"           # GTK theme switcher
