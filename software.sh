@@ -26,7 +26,6 @@ software=(
     "npm"                    # Node package manager
     "gcc"                    # C and C++ compiler
     "make"                   # Build automation tool
-    "openjdk"                # Java Development Kit
     "postgresql"             # PostgreSQL database
     "firefox"                # Web browser
     "mpv"                    # Media player
