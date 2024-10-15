@@ -1,2 +1,0 @@
-ACTION=="add", KERNEL=="sd[a-z][0-9]", ENV{UDISKS_MOUNT_OPTIONS}="uid=1000,gid=1000,dmode=755,fmode=644", RUN+="/usr/bin/udevil mount -b %k"
-ACTION=="remove", KERNEL=="sd[a-z][0-9]", RUN+="/usr/bin/udevil unmount -b %k"
