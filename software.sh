@@ -10,40 +10,14 @@ handle_error() {
 echo "Updating the system..."
 sudo pacman -Syu --noconfirm || handle_error
 
-# List of software to install
+# List of software to install (UFW, Git, Krita, and Python-related packages)
 software=(
     "git"                    # Version control system
-    "vim"                    # Text editor
-    "htop"                   # Interactive process viewer
-    "curl"                   # Command line tool for transferring data with URLs
-    "wget"                   # Utility for downloading files
-    "docker"                 # Container platform
-    "docker-compose"         # Tool for defining and running multi-container Docker applications
+    "krita"                  # Digital painting software
     "python"                 # Python programming language
     "python-pip"             # Python package installer
     "python-virtualenv"      # Package for creating virtual environments
-    "nodejs"                 # JavaScript runtime
-    "npm"                    # Node package manager
-    "gcc"                    # C and C++ compiler
-    "make"                   # Build automation tool
-    "postgresql"             # PostgreSQL database
-    "firefox"                # Web browser
-    "mpv"                    # Media player
-    "filezilla"              # FTP client
-    "thunar"                 # Thunar file browser
-    "geany"                  # Lightweight IDE for various programming languages
-    "spyder"                 # Scientific Python IDE
     "ufw"                    # Uncomplicated Firewall
-    
-    # AwesomeWM Utilities
-    "feh"                    # Image viewer for backgrounds
-    "picom"                  # Compositor for transparency and effects
-    "lxappearance"           # GTK theme switcher
-    "nitrogen"               # Wallpaper manager
-    "xbindkeys"              # Keyboard shortcut manager
-    "mpd"                    # Music Player Daemon
-    "ncmpcpp"                # MPD client
-    "gpick"                  # Color picker tool
 )
 
 # Install software
@@ -91,12 +65,5 @@ sudo ufw enable || handle_error
 echo "UFW status:"
 sudo ufw status verbose
 
-# Optional: Copy AwesomeWM configuration
-if [ -f ~/.config/awesome/rc.lua ]; then
-    echo "Backing up existing AwesomeWM configuration..."
-    cp ~/.config/awesome/rc.lua ~/.config/awesome/rc.lua.bak
-fi
-
-# Optional: Notify user for further customization
-echo "Installation and AwesomeWM setup complete!"
-echo "Please customize your AwesomeWM configuration in ~/.config/awesome/rc.lua."
+# Notify user for further customization
+echo "Installation and UFW setup complete!"
